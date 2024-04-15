@@ -4,10 +4,10 @@ import pandas
 df = pandas.read_csv('data.csv', sep=';')
 st.set_page_config(layout="wide")
 
-col1, col2 = st.columns(2)
+col1, empty_col, col2 = st.columns([1.5, 0.5, 1.5])
 
 with col1:
-    st.image('Images/me with glasses.png')
+    st.image('Images/me with glasses.png', width=400)
 
 with col2:
     st.title("Rahul Chandan")
@@ -24,7 +24,7 @@ Below, you can find some of the apps that I have built. Feel free to contact me
 """
 st.info(content2)
 
-st.write(df)
+# st.write(df)
 
 col3, col4 = st.columns(2)
 
@@ -34,7 +34,13 @@ with col3:
     #     st.header(title)
     for index, row in df[:10].iterrows():  # slicing from 0 till 10. first 10 items
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("Images/" + row["image"])  # concatenatin to create a relative path
+        st.write(f"[Source code]({row['url']})")
 
 with col4:
     for index, row in df[10:].iterrows():  #starting from index 10. So last 10 items
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("Images/" + row["image"])
+        st.write(f"[Source code]({row['url']})")
