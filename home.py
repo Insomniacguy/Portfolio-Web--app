@@ -18,8 +18,12 @@ with col1:
 with col2:
     st.title("Rahul Chandan")
     content = """Hey there! I'm Rahul, a freelance Python developer who loves creating secure and scalable software 
-    solutions. With experience in ethical hacking and online marketing I get what businesses need and 
-    how to make things work smoothly. Let's build something awesome together."""
+    solutions.
+    From web-dev to data analysis, automation and cybersecurity, my python skills are ready to tackle any 
+    challenge. 
+    I value open communication, working closely with clients to understand their pain-points.
+    Let's build something awesome together."""
+
     # st.write(content)
     st.info(content)
 
