@@ -1,3 +1,9 @@
+# Github: https://github.com/RahulTriedCoding
+# Twitter: https://x.com/RahulChandanDev
+# LinkedIn: https://www.linkedin.com/in/rahulwritescode
+# Youtube: www.youtube.com/@Rahulwritescodeyt
+# Gmail: rahulwritescode01@gmail.com
+
 import streamlit as st
 import pandas
 
@@ -11,11 +17,9 @@ with col1:
 
 with col2:
     st.title("Rahul Chandan")
-    content = """I'm Rahul, a freelance Python developer. I completed my Bachelors of Science in Information 
-    Technology from Mumbai University in 2017. Over the years, I've gained experience in diverse fields such as 
-    online marketing, cybersecurity, and healthcare. My broad understanding of different business areas allows me to 
-    grasp your unique requirements effectively. I specialize in crafting tailored software solutions that prioritize 
-    security, scalability, and relevance to your business needs."""
+    content = """I'm Rahul, a freelance Python developer and ethical hacker with experience in online marketing, 
+    cybersecurity, and healthcare. My diverse background enables me to understand and meet your unique requirements. 
+    I specialize in creating secure, scalable, and relevant software solutions."""
     # st.write(content)
     st.info(content)
 
